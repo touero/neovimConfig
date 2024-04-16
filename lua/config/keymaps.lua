@@ -9,5 +9,7 @@ vim.api.nvim_set_keymap("n", "<S-Tab>", "<<", {})
 vim.api.nvim_set_keymap("n", "<CR>", ":normal o<CR>", {})
 vim.api.nvim_set_keymap("n", "<S-Enter>", ":normal O<CR>", {})
 
-vim.api.nvim_set_keymap("v", "<Tab>", ">gc", {})
-vim.api.nvim_set_keymap("v", "<S-Tab>", "<gv", {})
+vim.api.nvim_set_keymap("v", "<Tab>", ">>", {})
+vim.api.nvim_set_keymap("v", "<S-Tab>", "<<", {})
+
+vim.api.nvim_set_keymap("n", "<C-t>", ":ToggleTerm<CR>", { noremap = true, silent = true })
